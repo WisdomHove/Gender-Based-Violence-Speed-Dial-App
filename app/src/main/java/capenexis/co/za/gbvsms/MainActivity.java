@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private int entries = 6;
+    private int entries = 13;
     private String phoneNum[];
     private String buttonLabels[];
 
@@ -37,50 +37,40 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         button2.setOnClickListener(this);
 
         Button button3 = (Button)findViewById(R.id.button3);
-        button2.setText(buttonLabels[2]);
-        button2.setOnClickListener(this);
+        button3.setText(buttonLabels[2]);
+        button3.setOnClickListener(this);
 
         Button button4 = (Button)findViewById(R.id.button4);
-        button2.setText(buttonLabels[3]);
-        button2.setOnClickListener(this);
+        button4.setText(buttonLabels[3]);
+        button4.setOnClickListener(this);
 
         Button button5 = (Button)findViewById(R.id.button5);
-        button2.setText(buttonLabels[4]);
-        button2.setOnClickListener(this);
+        button5.setText(buttonLabels[4]);
+        button5.setOnClickListener(this);
 
         Button button6 = (Button)findViewById(R.id.button6);
-        button2.setText(buttonLabels[5]);
-        button2.setOnClickListener(this);
+        button6.setText(buttonLabels[5]);
+        button6.setOnClickListener(this);
 
         Button button7 = (Button)findViewById(R.id.button7);
-        button2.setText(buttonLabels[6]);
-        button2.setOnClickListener(this);
+        button7.setText(buttonLabels[6]);
+        button7.setOnClickListener(this);
 
         Button button8 = (Button)findViewById(R.id.button8);
-        button2.setText(buttonLabels[7]);
-        button2.setOnClickListener(this);
+        button8.setText(buttonLabels[7]);
+        button8.setOnClickListener(this);
 
         Button button9 = (Button)findViewById(R.id.button9);
-        button2.setText(buttonLabels[8]);
-        button2.setOnClickListener(this);
+        button9.setText(buttonLabels[8]);
+        button9.setOnClickListener(this);
 
         Button button10 = (Button)findViewById(R.id.button10);
-        button2.setText(buttonLabels[9]);
-        button2.setOnClickListener(this);
+        button10.setText(buttonLabels[9]);
+        button10.setOnClickListener(this);
 
         Button button11 = (Button)findViewById(R.id.button11);
-        button2.setText(buttonLabels[10]);
-        button2.setOnClickListener(this);
-
-        Button button12 = (Button)findViewById(R.id.button12);
-        button2.setText(buttonLabels[11]);
-        button2.setOnClickListener(this);
-
-        Button button13 = (Button)findViewById(R.id.button13);
-        button2.setText(buttonLabels[12]);
-        button2.setOnClickListener(this);
-
-
+        button11.setText(buttonLabels[10]);
+        button11.setOnClickListener(this);
 
     }
 
@@ -103,31 +93,30 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         phoneNum[0] = "080-042-8428";
         phoneNum[1] = "*120*7867#";
-        phoneNum[2] = "315-31";
-        phoneNum[4] = "999-000-0004";
-        phoneNum[5] = "999-000-0004";
-        phoneNum[6] = "999-000-0004";
-        phoneNum[7] = "999-000-0004";
-        phoneNum[8] = "999-000-0004";
-        phoneNum[9] = "999-000-0004";
-        phoneNum[10] = "999-000-0004";
-        phoneNum[11] = "999-000-0004";
+        phoneNum[2] = "101-77";
+        phoneNum[3] = "101-11";
+        phoneNum[4] = "101-77";
+        phoneNum[5] = "080-015-0150";
+        phoneNum[6] = "081-383-7698";
+        phoneNum[7] = "011-452-4110";
+        phoneNum[8] = "011-452-4110";
+        phoneNum[9] = "082-231-0805";
+        phoneNum[10] = "086-563-3754";
 
 
-        buttonLabels[0] = "EMERGENCY LINE";
+
+        buttonLabels[0] = "GBV HOTLINE NUMBER";
         buttonLabels[1] = "(PLEASE CALL ME) supported by USSD";
-        buttonLabels[2] = "SMS 'HELP' ";
-        buttonLabels[3] = "COMMENTS & SUGGESTIONS";
-        buttonLabels[4] = "NATIONAL EMERGENCY RESPONSE";
-        buttonLabels[5] = "SAPS";
-        buttonLabels[6] = "AMBULANCE";
-        buttonLabels[7] = "GENDER ABUSE";
-        buttonLabels[8] = "PEOPLE OPPOSED TO WOMEN ABUSE";
-        buttonLabels[9] = "CHILDLINE SOUTH AFRICA";
-        buttonLabels[10] = "CHILD WELFARE SOUTH AFRICA";
-        buttonLabels[11] = "LIFELINE SOUTH AFRICA";
-        buttonLabels[12] = "SPEAK OUT";
-        buttonLabels[13] = "LIFELINE SOUTH AFRICA";
+        buttonLabels[2] = "NATIONAL EMERGENCY RESPONSE";
+        buttonLabels[3] = "SAPS";
+        buttonLabels[4] = "AMBULANCE";
+        buttonLabels[5] = "GENDER ABUSE";
+        buttonLabels[6] = "PEOPLE OPPOSED TO WOMEN ABUSE";
+        buttonLabels[7] = "CHILDLINE SOUTH AFRICA";
+        buttonLabels[8] = "CHILD WELFARE SOUTH AFRICA";
+        buttonLabels[9] = "LIFELINE SOUTH AFRICA";
+        buttonLabels[10] = "SPEAK OUT";
+
     }
 
     public void launchSMS(View view)
@@ -156,6 +145,42 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
             case R.id.button2:
                 launchDialer(phoneNum[1]);
+                break;
+
+            case R.id.button3:
+                launchDialer(phoneNum[2]);
+                break;
+
+            case R.id.button4:
+                launchDialer(phoneNum[3]);
+                break;
+
+            case R.id.button5:
+                launchDialer(phoneNum[4]);
+                break;
+
+            case R.id.button6:
+                launchDialer(phoneNum[5]);
+                break;
+
+            case R.id.button7:
+                launchDialer(phoneNum[6]);
+                break;
+
+            case R.id.button8:
+                launchDialer(phoneNum[7]);
+                break;
+
+            case R.id.button9:
+                launchDialer(phoneNum[8]);
+                break;
+
+            case R.id.button10:
+                launchDialer(phoneNum[9]);
+                break;
+
+            case R.id.button11:
+                launchDialer(phoneNum[10]);
                 break;
 
         }
